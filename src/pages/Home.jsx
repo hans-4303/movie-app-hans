@@ -22,6 +22,10 @@ class Home extends React.Component {
     this.getMovies();
   }
 
+  componentWillUnmount() {
+    console.log("unmount");
+  }
+
   render() {
     const {isLoading, movies} = this.state;
 
